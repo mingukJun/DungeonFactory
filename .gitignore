@@ -1,5 +1,14 @@
-# 모든 파일을 일단 무시
-/*
+# 1. 모든 파일과 폴더를 무시
+*
 
-# 하지만 Assets 폴더와 그 안의 스크립트 파일은 허용
-!/Assets/Code
+# 2. Assets 폴더 자체는 무시하지 않음 (하위로 들어가기 위해)
+!Assets/
+
+# 3. Assets/Code 폴더 내부로 들어갈 수 있도록 허용
+!Assets/Code/
+
+# 4. Assets/Code 폴더 내의 모든 .cs 파일만 허용
+!Assets/Code/**/*.cs
+
+# (선택 사항) .gitignore 파일 자체도 깃허브에서 관리하고 싶다면 추가
+!.gitignore
